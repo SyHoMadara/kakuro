@@ -1,6 +1,6 @@
 # Table of Contents
+
 - [Table of Contents](#table-of-contents)
-  - [Run Project](#run-project)
 - [Kakuro Game Solver](#kakuro-game-solver)
   - [Overview](#overview)
   - [Features](#features)
@@ -11,14 +11,6 @@
   - [Table Example](#table-example)
   - [Documentation](#documentation)
   - [Contact](#contact)
-
-## Run Project
-```bash
-./cmake-build-debug --target kakuro -j 10
-clear
-./cmake-build-debug/kakuro
-echo "\n"
-```
 
 # Kakuro Game Solver
 
