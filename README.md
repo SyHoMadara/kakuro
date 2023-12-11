@@ -69,8 +69,8 @@ This C++ project is a Kakuro game solver that utilizes Artificial Intelligence (
 
 If you want to input a table, use the following rules:
 
-  * Walls -> "$x$/$y$" where $x$ and $y$ represent column sum and row sum respectively (If not exist, must be zero).
-  * For empty cells, use "0".
+  * Walls -> $x$/$y$ where $x$ and $y$ represent column sum and row sum respectively (If not exist, must be zero).
+  * For empty cells, use 0.
 
 For the above example:
 
