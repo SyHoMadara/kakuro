@@ -1,10 +1,23 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+  - [Run Project](#run-project)
+- [Kakuro Game Solver](#kakuro-game-solver)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Building](#building)
+    - [Usage](#usage)
+  - [Table Example](#table-example)
+  - [Documentation](#documentation)
+  - [Contact](#contact)
+
 ## Run Project
 ```bash
 ./cmake-build-debug --target kakuro -j 10
 clear
 ./cmake-build-debug/kakuro
 echo "\n"
-
 ```
 
 # Kakuro Game Solver
@@ -32,22 +45,19 @@ This C++ project is a Kakuro game solver that utilizes Artificial Intelligence (
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/kakuro-solver.git
+   git clone https://github.com/SyHoMadara/kakuro
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd kakuro-solver
+   cd kakuro
    ```
 
 3. Build the project using CMake:
 
     ```bash
     ./cmake-build-debug --target kakuro -j 10
-    clear
-    ./cmake-build-debug/kakuro
-    echo "\n"
     ```
 
 ### Usage
@@ -55,37 +65,35 @@ This C++ project is a Kakuro game solver that utilizes Artificial Intelligence (
 1. Run the executable:
 
    ```bash
-   ./kakuro_solver
+   ./cmake-build-debug/kakuro
    ```
 
 2. Enter the Kakuro puzzle using the provided interface.
 
 3. The solver will output the solution or inform if no solution is found.
 
-### Example
+## Table Example
+<p align="center"> <img src="https://sudoku-puzzles.net/wp-content/puzzles/kakuro-5x5/easy/1.png" width=360><figcaption>kakuro example</figcaption> </p>
+
+If you want to input a table, use the following rules:
+
+  * Walls -> "$x$/$y$" where $x$ and $y$ represent column sum and row sum respectively (If not exist, must be zero).
+  * For empty cells, use "0".
+
+For the above example:
 
 ```cpp
-// Sample code or command for running the solver
-./kakuro_solver < sample_puzzle.txt
+std::string s = "0/0 11/0 16/0 17/0 0/0\n"
+                "0/15 0 0 3 0/0\n"
+                "0/8 0 1 0 13/0\n"
+                "0/0 0/15 0 2 0\n"
+                "0/0 0/19 2 0 0";
 ```
 
 ## Documentation
 
 - Detailed documentation on the implementation, algorithms, and classes can be found in the [docs](./docs) directory.
 
-## Contributing
-
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md) for details on how to contribute to this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Mention any libraries, tutorials, or resources you used or were inspired by during development.
-
 ## Contact
 
-For any questions or concerns, please contact [Your Name](mailto:your.email@example.com).
-
+For any questions or concerns, please contact [S.Hosein Sarafrazi](mailto:sh.sarafrazi80@gmail.com).
